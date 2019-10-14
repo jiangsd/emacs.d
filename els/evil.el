@@ -5,8 +5,7 @@
 (use-package evil
   :ensure t
   :config
-  (evil-mode))
-
+  (evil-mode 1))
 
 ;; load evil
 ;;(use-package evil

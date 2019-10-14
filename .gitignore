@@ -42,6 +42,7 @@ flycheck_*.el
 
 # projectiles files
 .projectile
+*.eld
 
 # directory configuration
 .dir-locals.el

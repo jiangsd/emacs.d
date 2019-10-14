@@ -8,7 +8,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (evil py-autopep8 flycheck flychheck elpy zenburn-theme cry use-package))))
+    (counsel-projectile projectile evil py-autopep8 flycheck flychheck elpy zenburn-theme cry use-package))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -27,6 +27,9 @@
 
 (package-initialize)
 
+;; (set-frame-font "Tahoma-18")
+(set-face-attribute 'default (selected-frame) :height 200)
+
 ;; Bootstrap 'use-package'
 (unless (package-installed-p 'use-package)
   (package-refresh-contents)
@@ -44,9 +47,13 @@
 ;  :config (load-theme 'zenburn t))
 ;;(load-theme 'zenburn t)
 
+(load "~/.emacs.d/els/evil.el")
 
 (load "~/.emacs.d/els/themes.el")
 
 (load "~/.emacs.d/els/python.el")
+
+(load "~/.emacs.d/els/projectile.el")
+
 
 ;;; init.el ends here

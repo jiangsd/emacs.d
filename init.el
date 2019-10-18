@@ -8,7 +8,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (counsel-projectile projectile evil py-autopep8 flycheck flychheck elpy zenburn-theme cry use-package))))
+    (faff-theme omnisharp counsel-projectile projectile evil py-autopep8 flycheck flychheck elpy zenburn-theme cry use-package))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -28,7 +28,7 @@
 (package-initialize)
 
 ;; (set-frame-font "Tahoma-18")
-(set-face-attribute 'default (selected-frame) :height 200)
+(set-face-attribute 'default (selected-frame) :height 160)
 
 ;; Bootstrap 'use-package'
 (unless (package-installed-p 'use-package)
@@ -55,5 +55,6 @@
 
 (load "~/.emacs.d/els/projectile.el")
 
+(load "~/.emacs.d/els/omnisharp.el")
 
 ;;; init.el ends here

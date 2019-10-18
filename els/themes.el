@@ -1,4 +1,12 @@
-(setq my-themes '(leuven zenburn))
+;;; product --- Summary
+;;; Commentary:
+;;; Code:
+
+(use-package faff-theme
+  :ensure t
+ :config (load-theme 'faff t))
+
+(setq my-themes '(faff zenburn leuven))
 
 (setq my-cur-theme nil)
 (defun cycle-my-theme ()

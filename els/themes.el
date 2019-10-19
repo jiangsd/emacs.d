@@ -4,9 +4,28 @@
 
 (use-package faff-theme
   :ensure t
- :config (load-theme 'faff t))
+  :config (load-theme 'faff t))
 
-(setq my-themes '(faff zenburn leuven))
+(use-package kaolin-themes
+  :ensure t
+  :config
+  (load-theme 'kaolin-light t))
+
+;; (use-package doom-themes
+;;   :ensure t
+;;   :config
+;;   (load-theme 'doom-nord-light t))
+
+(use-package gruvbox-theme
+  :ensure t
+  :config
+  (load-theme 'gruvbox-light-hard t)
+  (load-theme 'gruvbox-dark-hard t))
+
+(add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
+
+;; (setq my-themes '(faff zenburn leuven))
+(setq my-themes '(hrbsd modus-operandi modus-vivendi kaolin-light gruvbox-light-hard gruvbox-dark-hard faff zenburn))
 
 (setq my-cur-theme nil)
 (defun cycle-my-theme ()
@@ -24,3 +43,6 @@
 ;; Bind this to C-t
 ;;(global-set-key (kbd "C-t") 'cycle-my-theme)
 (global-set-key [f4] 'cycle-my-theme)
+
+;;; themes.el ends here
+

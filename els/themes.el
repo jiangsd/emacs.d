@@ -6,26 +6,26 @@
   :ensure t
   :config (load-theme 'faff t))
 
-(use-package kaolin-themes
-  :ensure t
-  :config
-  (load-theme 'kaolin-light t))
+;; (use-package kaolin-themes
+  ;; :ensure t
+  ;; :config
+  ;; (load-theme 'kaolin-light t))
 
 ;; (use-package doom-themes
 ;;   :ensure t
 ;;   :config
 ;;   (load-theme 'doom-nord-light t))
 
-(use-package gruvbox-theme
-  :ensure t
-  :config
-  (load-theme 'gruvbox-light-hard t)
-  (load-theme 'gruvbox-dark-hard t))
+;; (use-package gruvbox-theme   don't use, has problem
+  ;; :ensure t
+  ;; :config
+  ;; (load-theme 'gruvbox-dark-hard t))
 
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
 
 ;; (setq my-themes '(faff zenburn leuven))
-(setq my-themes '(hrbsd modus-operandi modus-vivendi kaolin-light gruvbox-light-hard gruvbox-dark-hard faff zenburn))
+;; (setq my-themes '(hrbsd modus-operandi modus-vivendi kaolin-light gruvbox-light-hard gruvbox-dark-hard faff zenburn))
+(setq my-themes '(modus-operandi modus-vivendi faff zenburn))
 
 (setq my-cur-theme nil)
 (defun cycle-my-theme ()

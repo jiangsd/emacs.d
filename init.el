@@ -79,7 +79,9 @@
 ;;(load-theme 'zenburn t)
 
 
-(load "~/.emacs.d/els/hydra-indent-tools.el")
+;; (load "~/.emacs.d/els/hydra-indent-tools.el")
+
+(load "~/.emacs.d/els/hydra.el")
 
 (load "~/.emacs.d/els/evil.el")
 
@@ -90,5 +92,9 @@
 (load "~/.emacs.d/els/projectile.el")
 
 (load "~/.emacs.d/els/omnisharp.el")
+
+(load "~/.emacs.d/els/yaml.el")
+
+(load "~/.emacs.d/els/indent-tools.el")
 
 ;;; init.el ends here

@@ -21,7 +21,10 @@
   ;; :config
   ;; (load-theme 'gruvbox-dark-hard t))
 
-(add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
+;; (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
+
+;; https://gitlab.com/protesilaos/modus-themes.git
+(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/modus-themes")
 
 ;; (setq my-themes '(faff zenburn leuven))
 ;; (setq my-themes '(hrbsd modus-operandi modus-vivendi kaolin-light gruvbox-light-hard gruvbox-dark-hard faff zenburn))

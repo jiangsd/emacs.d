@@ -55,4 +55,3 @@
 (global-set-key [f2] 'indent-tools-hydra/body)
 
 ;;; hydra-indent-tools.el ends here
-

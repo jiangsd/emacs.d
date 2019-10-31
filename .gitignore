@@ -55,5 +55,5 @@ flycheck_*.el
 
 /url/
 /.cache/
-/themes/
-site-lisp/
+# /themes/
+# site-lisp/

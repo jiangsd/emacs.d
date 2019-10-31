@@ -97,4 +97,6 @@
 
 (load "~/.emacs.d/els/indent-tools.el")
 
+(load "~/.emacs.d/els/highlight-indent-guides.el")
+
 ;;; init.el ends here

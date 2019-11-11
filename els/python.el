@@ -5,7 +5,8 @@
 (use-package elpy
   :ensure t
   :config
-  (elpy-enable))
+  (elpy-enable)
+  (add-hook 'elpy-mode-hook (lambda() (highlight-indentation-mode -1))))
 
 (use-package flycheck
   :ensure t

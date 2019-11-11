@@ -23,12 +23,14 @@
 
 ;; (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
 
+;; (load-theme 'solarized-dark t)
+
 ;; https://gitlab.com/protesilaos/modus-themes.git
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/modus-themes")
 
 ;; (setq my-themes '(faff zenburn leuven))
 ;; (setq my-themes '(hrbsd modus-operandi modus-vivendi kaolin-light gruvbox-light-hard gruvbox-dark-hard faff zenburn))
-(setq my-themes '(modus-operandi modus-vivendi faff zenburn))
+(setq my-themes '(doom-oceanic-next doom-fairy-floss modus-operandi modus-vivendi faff zenburn))
 
 (setq my-cur-theme nil)
 (defun cycle-my-theme ()

@@ -1,6 +1,7 @@
 ;;; package --- Summary
 
 ;;; Commentary:
+;;; https://github.com/DarthFennec/highlight-indent-guides.git
 
 ;;; Code:
 

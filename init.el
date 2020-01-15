@@ -19,7 +19,7 @@
     ("#CC9393" "#DFAF8F" "#F0DFAF" "#7F9F7F" "#BFEBBF" "#93E0E3" "#94BFF3" "#DC8CC3")))
  '(package-selected-packages
    (quote
-    (gruvbox-theme doom-themes kaolin-themes faff-theme omnisharp counsel-projectile projectile evil py-autopep8 flycheck flychheck elpy zenburn-theme cry use-package)))
+    (centaur-tabs web-mode gruvbox-theme doom-themes kaolin-themes faff-theme omnisharp counsel-projectile projectile evil py-autopep8 flycheck flychheck elpy zenburn-theme cry use-package)))
  '(pdf-view-midnight-colors (quote ("#DCDCCC" . "#383838"))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -77,6 +77,10 @@
   :ensure t
   :config (which-key-mode))
 
+(c-set-offset 'inline-open 0)
+
+(add-hook 'emacs-lisp-mode-hook 'show-paren-mode)
+
 ;;(use-package zenburn-theme
 ;;  :ensure t
 ;  :config (load-theme 'zenburn t))
@@ -102,5 +106,13 @@
 (load "~/.emacs.d/els/indent-tools.el")
 
 (load "~/.emacs.d/els/highlight-indent-guides.el")
+
+(load "~/.emacs.d/els/web-mode.el")
+
+(load "~/.emacs.d/els/tabs.el")
+
+(load "~/.emacs.d/els/hydra-evil.el")
+
+(load "~/.emacs.d/els/scheme.el")
 
 ;;; init.el ends here

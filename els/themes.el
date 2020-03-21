@@ -11,10 +11,10 @@
   ;; :config
   ;; (load-theme 'kaolin-light t))
 
-;; (use-package doom-themes
-;;   :ensure t
+ (use-package doom-themes
+   :ensure t)
 ;;   :config
-;;   (load-theme 'doom-nord-light t))
+ ;;  (load-theme 'doom-nord-light t))
 
 ;; (use-package gruvbox-theme   don't use, has problem
   ;; :ensure t

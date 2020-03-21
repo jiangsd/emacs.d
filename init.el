@@ -19,7 +19,7 @@
     ("#CC9393" "#DFAF8F" "#F0DFAF" "#7F9F7F" "#BFEBBF" "#93E0E3" "#94BFF3" "#DC8CC3")))
  '(package-selected-packages
    (quote
-    (centaur-tabs web-mode gruvbox-theme doom-themes kaolin-themes faff-theme omnisharp counsel-projectile projectile evil py-autopep8 flycheck flychheck elpy zenburn-theme cry use-package)))
+    (lsp-ui dap-java dap-mode lsp-java jsp-ui company-lsp lsp-mode centaur-tabs web-mode gruvbox-theme doom-themes kaolin-themes faff-theme omnisharp counsel-projectile projectile evil py-autopep8 flycheck flychheck elpy zenburn-theme cry use-package)))
  '(pdf-view-midnight-colors (quote ("#DCDCCC" . "#383838"))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -70,6 +70,9 @@
   (package-refresh-contents)
   (package-install 'use-package))
 
+(require 'use-package)
+(setq use-package-always-ensure t)
+
 (use-package try
   :ensure t)
 
@@ -114,6 +117,8 @@
 (load "~/.emacs.d/els/tabs.el")
 
 (load "~/.emacs.d/els/hydra-evil.el")
+
+(load "~/.emacs.d/els/lsp-mode.el")
 
 ;;(load "~/.emacs.d/els/scheme.el")
 

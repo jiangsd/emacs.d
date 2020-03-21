@@ -16,7 +16,8 @@
 
   ;; (setq web-mode-engines-alist
 	;; '(("razor" . "\\.cshtml\\'")))
-  
+
+  (setq-default indent-tabs-mode nil)
   (setq web-mode-enable-auto-closing t)
   (setq web-mode-enable-auto-quoting t)
 

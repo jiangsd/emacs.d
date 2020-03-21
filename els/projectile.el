@@ -10,9 +10,9 @@
   (define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
   (setq projectile-completion-system 'ivy))
 
-;;(use-package counsel-projectile
-;;  :ensure t
-;;  :config
-;;  (counsel-projectile-mode))
+(use-package counsel-projectile
+ :ensure t
+ :config
+ (counsel-projectile-mode))
 
 ;;; projectile.el ends here

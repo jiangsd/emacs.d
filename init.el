@@ -46,21 +46,21 @@
 ;; (set-face-attribute 'default (selected-frame) :height 160)
 
 ;;* Font
-(defun ora-set-font (&optional frame)
-  (when frame
-    (select-frame frame))
-  (condition-case nil
-      (set-frame-font
-       "DejaVu Sans Mono")
-    (error
-     (ignore-errors
-       (set-frame-font
-        "Lucida Sans Typewriter")))))
-(ora-set-font)
-(set-face-attribute 'default nil :height (if (eq system-type 'darwin) 150 113))
-(ignore-errors
-  (set-fontset-font t nil "Symbola" nil 'append))
-(add-hook 'after-make-frame-functions 'ora-set-font)
+;;(defun ora-set-font (&optional frame)
+;;  (when frame
+;;    (select-frame frame))
+;;  (condition-case nil
+;;      (set-frame-font
+;;       "DejaVu Sans Mono")
+;;    (error
+;;     (ignore-errors
+;;       (set-frame-font
+;;        "Lucida Sans Typewriter")))))
+;;(ora-set-font)
+;;(set-face-attribute 'default nil :height (if (eq system-type 'darwin) 150 113))
+;;(ignore-errors
+;;  (set-fontset-font t nil "Symbola" nil 'append))
+;;(add-hook 'after-make-frame-functions 'ora-set-font)
 
 
 
@@ -80,6 +80,8 @@
 (c-set-offset 'inline-open 0)
 
 (add-hook 'emacs-lisp-mode-hook 'show-paren-mode)
+
+(setq backup-directory-alist '(("." . "~/backups")))
 
 ;;(use-package zenburn-theme
 ;;  :ensure t
@@ -113,6 +115,6 @@
 
 (load "~/.emacs.d/els/hydra-evil.el")
 
-(load "~/.emacs.d/els/scheme.el")
+;;(load "~/.emacs.d/els/scheme.el")
 
 ;;; init.el ends here

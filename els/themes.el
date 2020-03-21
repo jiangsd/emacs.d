@@ -30,7 +30,9 @@
 
 ;; (setq my-themes '(faff zenburn leuven))
 ;; (setq my-themes '(hrbsd modus-operandi modus-vivendi kaolin-light gruvbox-light-hard gruvbox-dark-hard faff zenburn))
-(setq my-themes '(doom-oceanic-next doom-fairy-floss modus-operandi modus-vivendi faff zenburn))
+;; (setq my-themes '(doom-oceanic-next doom-fairy-floss modus-operandi modus-vivendi faff zenburn))
+(setq my-themes '(doom-oceanic-next doom-fairy-floss doom-opera-light doom-one-light faff zenburn))
+;; (setq my-themes '(modus-operandi modus-vivendi faff zenburn))
 
 (setq my-cur-theme nil)
 (defun cycle-my-theme ()

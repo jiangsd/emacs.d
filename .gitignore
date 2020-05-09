@@ -60,4 +60,4 @@ flycheck_*.el
 # /themes/
 # site-lisp/
 
-.lsp-session-v1
+./.lsp-session-v1
